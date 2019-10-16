@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="Daniel Ferraz">
+   <title>Administração</title>
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/admin.css">
+   <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css">
+   <link rel="stylesheet" href="font-awesome/css/solid.min.css">
+   <link rel="stylesheet" href="font-awesome/css/regular.min.css">
+   <link rel="stylesheet" href="font-awesome/css/svg-with-js.min.css">
+   <link rel="stylesheet" href="font-awesome/css/v4-shims.min.css">
+
+
+   
+
+</head>
+<body>
+
+   <!-- Nav -->
+   <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+               <span class="sr-only"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+               <span class="img-logo">Biblioteca Online</span>
+            </a>
+         </div>
+         <div class="collapse navbar-collapse" id="barra-navegacao">
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="index.html">
+                     Sair
+                     <i class="glyphicon glyphicon-log-in"></i>
+                  </a></li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   
+   <!-- Tab Navegação -->
+   <section class="nav2">
+      <div class="container-fluid">
+         <ul class=" nav-custom nav-pills nav-justified">
+            <li class="active"><a href="#rela" role="tab" data-toggle="tab"><i
+                     class="fas fa-chart-line"></i>Estatística</a></li>
+            <li><a href="#consult" role="tab" data-toggle="tab"><i class="fas fa-list-ul"></i>Consultar Usuários</a>
+            </li>
+            <li><a href="#nousuario" role="tab" data-toggle="tab"><i class="far fa-address-card"></i>Novo
+                  Usuário</a></li>
+            <li><a href="#livros" role="tab" data-toggle="tab"><i class="fas fa-book-open"></i>Livros</a></li>
+         </ul>
+      </div>
+   </section>
+
+   <!-- conteudo das tabs -->
+   <div class="tab-content">
+
+      <!-- relatorio -->
+      <div class="tab-pane active" role="tabpanel" id="rela">
+         <section class="relatorio">
+            <div class="container">
+               <legend class="text-center">Controle de Acesso</legend>
+               <div class="row">
+
+                  <div class="col-xs-4">
+                     <div class="panel panel-default text-center">
+                        <div class="icone">
+                           <i class="fas fa-calendar-day" style="color:#5ac8fa"></i>
+                           
+                        </div>
+                        <div class="box-titulo">
+                           <h4>Diário
+                              <div class="badge" id="numeros">0</div>
+                           </h4>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-xs-4">
+                     <div class="panel panel-default text-center">
+                        <div class="icone">
+                           <i class="fa fa-calendar-minus-o" style="color:#FECB2E"></i>
+                        </div>
+                        <div class="box-titulo">
+                           <h4>Semanal
+                              <div class="badge" id="numeros">0</div>
+                           </h4>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-xs-4">
+                     <div class=" panel panel-default text-center">
+                        <div class="icone">
+                           <i class="fa fa-calendar" style="color:#4cd964"></i>
+                        </div>
+                        <div class="box-titulo">
+                           <h4>Mensal
+                              <div class="badge" id="numeros">0</div>
+                           </h4>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-xs-6">
+                     <div class="panel panel-default text-center">
+                        <div class="icone">
+                           <i class="fas fa-users" style="color:#147EFB"></i>
+                        </div>
+                        <div class="box-titulo">
+                           <h4>Ativos
+                              <div class="badge" id="numeros">0</div>
+                           </h4>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-xs-6">
+                     <div class="panel panel-default text-center">
+                        <div class="icone">
+                           <i class="fas fa-book" style="color:rgba(231, 72, 33, 0.932)"></i>
+                        </div>
+                        <div class="box-titulo">
+                           <h4>Publicados
+                              <div class="badge" id="numeros">0</div>
+                           </h4>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <!-- Consulta -->
+      <div class="tab-pane fade" role="tabpanel" id="consult">
+         <section class="consult">
+            <div class="container-fluid">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h4>Usuários</h4>
+                  </div>
+                  <div class="panel-body">
+                     <form class="navbar-form navbar-light">
+                        <input type=" text" id="pesquisar" class="form-control" required="required"
+                           placeholder="Localizar Usuário">
+                     </form>
+                     <br>
+                    
+                     <div class="table-responsive">
+                        <table class="table table-striped table-condensed ">
+                           <thead>
+                              <tr>
+                                 <th>Nome</th>
+                                 <th>Tipo de Usuário</th>
+                                 <th>N° Matricula</th>
+                                 <th>Senha</th>
+                                 <th>Série</th>
+                                 <th>Curso</th>
+                                 <th>Status</th>
+                                 <th>Ações</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+
+                              <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td><span class="label label-success"></span></td>
+                                 <td><button type="button" class="btn btn-default">Desativar</button>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="panel-footer">
+                     
+                  </div>
+
+               </div>
+         </section>
+      </div>
+
+      <!--Novo Usuário-->
+      <div class="tab-pane fade" role="tabpanel" id="nousuario">
+         <section class="cadastro">
+            <div class="container">
+              
+              <div class="panel panel-default">  
+               <form action="">
+                  <legend class="text-center">Cadastro de Usuário</legend>
+                  <div class="row">
+
+                     <div class="form-group col-md-6">
+                        <label>Usuário</label>
+                        <input class="form-control" type="text" nome="Usuário" placeholder="Nome">
+                     </div>
+
+                     <div class="form-group col-md-6">
+                        <label>Tipo de Usuário</label>
+                        <select name="" id="tipousuario" class="form-control">
+                           <option value="">Selecione</option>
+                           <option value="1">Leitor</option>
+                           <option value="2">Secretaria</option>
+                           <option value="3">Administração</option>
+                        </select>
+                     </div>
+
+                     <div class="form-group col-md-6">
+                        <label for="matricula">Matricula</label>
+                        <input class="form-control" type="text" name="Matricula" id="matricula"
+                           placeholder="N° Matricula">
+                     </div>
+
+                     <div class="form-group col-md-2">
+                        <label for="senha">Senha</label>
+                        <input class="form-control" type="text" maxlength="8" id="senha" placeholder="Senha">
+                     </div>
+
+                     <div class="form-group col-md-2">
+                        <label>Série</label>
+                        <select id="serie" class="form-control" required="required">
+                           <option value="">Selecione</option>
+                           <option value="1">1º Ano</option>
+                           <option value="2">2º Ano</option>
+                           <option value="3">3º Ano</option>
+                           <option value="4">4º Ano</option>
+                        </select>
+                     </div>
+
+                     <div class="form-group col-md-2">
+                        <label>Curso</label>
+                        <select id="curso" class="form-control" required="required">
+                           <option value="">Selecione</option>
+                           <option value="administracao">Administração</option>
+                           <option value="analisesclinicas">Análises Clínicas</option>
+                           <option value="enfermagem">Enfermagem</option>
+                           <option value="informatica">Informática</option>
+                           <option value="meioambiente">Meio Ambiente</option>
+                           <option value="quimica">Quimica</option>
+                        </select>
+                     </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-block" src="">Cadastrar</button>
+        
+               </form>
+            </div>
+            </div>
+         </section>
+      </div>
+
+      <!--livro-->
+      <div class="tab-pane" role="tablist" id="livros">
+         <section class="livros">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <form action="" enctype="multipart/form-data">
+                        <legend class="text-center">Publicar Livro</legend>
+
+                           <div class="form-group">
+                              <label for="">Capa Do livro</label>
+                              <input type="file" id="img" class="form-control">
+                            </div>
+
+                        <div class="form-group">
+                           <label for="titulo">Título</label>
+                           <input type="text" id="titulo" class="form-control" placeholder="Título do Livro">
+                        </div>
+
+                        <div class="form-group">
+                           <label for="autor">Autor</label>
+                           <input type="text" id="autor" class="form-control" placeholder="Autor do Livro">
+                        </div>
+
+                        <div class="form-group">
+                           <label for="sessao">Sessão</label>
+                           <select name="" id="sessao" class="form-control">
+                              <option value="">---</option>
+                              <option value="literarios">literários</option>]
+                              <option value="tecnicos">Técnicos</option>
+                           </select>
+                        </div>
+
+                        <div class="form-group">
+                           <label for="">Arquivo PDF</label>
+                           <input type="file" id="img" class="form-control">
+                        </div>
+
+                        <button type="button" class="btn btn-success">Enviar</button>
+
+                     </form>
+                  </div>
+
+                  <div class="col-md-6">
+                     <legend>Opção ISBN</legend>
+                     <div class="form-group">
+                        <label for="isbn">ISBN</label>
+                        <input type="text" id="isbn" placeholder="Insira o código" class="form-control">
+                     </div>
+
+                     <button type="button" class="btn btn-success">Enviar</button>
+                  </div>
+
+
+               </div>
+
+            </div>
+         </section>
+      </div>
+
+
+
+   </div>
+   <!--tab-content-->
+
+   <!-- jQuery -->
+   <script src="js/jquery-1.11.0.min.js"></script>
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+   <!-- Bootstrap JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+
+
+
+ </body>
+</html>

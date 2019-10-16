@@ -1,0 +1,180 @@
+/**-------------AUTOR----------------
+@Daniel Ferraz / 4° Informática
+E-MAIL -  Daniel0ferraz@outlook.com
+Whatsapp - 73 99990-0012
+Projeto - Biblioteca Online
+Ùltima Atulização em: 10/10/2019 ás 20:10
+-----------------------------------------*/
+body {
+  padding-top: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* NAVEGAÇÃO */
+nav.navbar-inverse {
+  padding: 12px 0px;
+  /* background: #8896AB; */
+  background-color: #9ba7b7;
+  border: none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-brand {
+  padding: 5px 10px
+}
+
+span.img-logo {
+  height: 64px;
+  width: 190px;
+  margin-top: -13px;
+  color: transparent;
+  display: block;
+  background: url('../imagens/logo_vetor_lateral.png') no-repeat;
+}
+
+/* iNPUT/CAIXA DE TEXTO */
+.input-group {
+  padding-top: 45px;
+}
+
+.form-control {
+  height: 40px;
+}
+
+/* PAGE-HEADER */
+.page-header {
+  border-bottom: 1px solid #bfc4ca;
+}
+
+/*BOTÕES*/
+.btn {
+  padding: 9px 16px;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #3cce79;
+  border-color: #3cce79;
+
+}
+
+.btn-custom {
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+  padding: 9px 30px;
+  border-radius: 7px;
+  line-height: 1;
+  color: rgb(70, 74, 88);
+  border: 2px solid #5D9CEC;
+  text-decoration: none;
+  transition: 0.4s, color 0.4s;
+}
+
+.btn-custom:hover {
+  background: #5D9CEC;
+  color: #fff;
+}
+
+.btn-custom2 {
+  font-weight: 600;
+  font-size: 15px;
+  padding: 9px 32px;
+  border-radius: 7px;
+  line-height: 1;
+  color: #555B6E;
+  background: none;
+  border: 2px solid #3cce79;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.btn-custom2:hover {
+  background-color: #3cce79;
+  color: #fff;
+}
+
+.box-botao {
+  padding-bottom: 15px;
+}
+
+/* IMG  */
+
+.thumbnail>img {
+  height: 200px;
+}
+
+/* PAGINATION */
+.pagint {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+  position: relative;
+  float: left;
+  padding: 8px 20px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fffafa;
+  border: 1px solid #ddd;
+}
+
+
+footer.rodape {
+  background-color: #2e2e2e;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.rodape h4 {
+  padding: 30px auto;
+  font-size: 18px;
+  font: normal;
+}
+
+/* TIPOGRAFIA */
+h2 {
+  font-size: 27px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .btn-custom2 {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .thumbnail {
+    padding: 5px;
+    ;
+    overflow: hidden;
+    height: 395px;
+  }
+}
