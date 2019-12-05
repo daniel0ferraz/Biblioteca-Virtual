@@ -17,9 +17,10 @@
    <link rel="stylesheet" href="font-awesome/css/v4-shims.min.css">
 
 
-   
+
 
 </head>
+
 <body>
 
    <!-- Nav -->
@@ -46,7 +47,7 @@
          </div>
       </div>
    </nav>
-   
+
    <!-- Tab Navegação -->
    <section class="nav2">
       <div class="container-fluid">
@@ -76,7 +77,7 @@
                      <div class="panel panel-default text-center">
                         <div class="icone">
                            <i class="fas fa-calendar-day" style="color:#5ac8fa"></i>
-                           
+
                         </div>
                         <div class="box-titulo">
                            <h4>Diário
@@ -157,7 +158,7 @@
                            placeholder="Localizar Usuário">
                      </form>
                      <br>
-                    
+
                      <div class="table-responsive">
                         <table class="table table-striped table-condensed ">
                            <thead>
@@ -190,7 +191,7 @@
                      </div>
                   </div>
                   <div class="panel-footer">
-                     
+
                   </div>
 
                </div>
@@ -201,67 +202,67 @@
       <div class="tab-pane fade" role="tabpanel" id="nousuario">
          <section class="cadastro">
             <div class="container">
-              
-              <div class="panel panel-default">  
-               <form action="">
-                  <legend class="text-center">Cadastro de Usuário</legend>
-                  <div class="row">
 
-                     <div class="form-group col-md-6">
-                        <label>Usuário</label>
-                        <input class="form-control" type="text" nome="Usuário" placeholder="Nome">
+               <div class="panel panel-default">
+                  <form action="">
+                     <legend class="text-center">Cadastro de Usuário</legend>
+                     <div class="row">
+
+                        <div class="form-group col-md-6">
+                           <label>Usuário</label>
+                           <input class="form-control" type="text" nome="Usuário" placeholder="Nome">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                           <label>Tipo de Usuário</label>
+                           <select name="" id="tipousuario" class="form-control">
+                              <option value="">Selecione</option>
+                              <option value="1">Leitor</option>
+                              <option value="2">Secretaria</option>
+                              <option value="3">Administração</option>
+                           </select>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                           <label for="matricula">Matricula</label>
+                           <input class="form-control" type="text" name="Matricula" id="matricula"
+                              placeholder="N° Matricula">
+                        </div>
+
+                        <div class="form-group col-md-2">
+                           <label for="senha">Senha</label>
+                           <input class="form-control" type="text" maxlength="8" id="senha" placeholder="Senha">
+                        </div>
+
+                        <div class="form-group col-md-2">
+                           <label>Série</label>
+                           <select id="serie" class="form-control" required="required">
+                              <option value="">Selecione</option>
+                              <option value="1">1º Ano</option>
+                              <option value="2">2º Ano</option>
+                              <option value="3">3º Ano</option>
+                              <option value="4">4º Ano</option>
+                           </select>
+                        </div>
+
+                        <div class="form-group col-md-2">
+                           <label>Curso</label>
+                           <select id="curso" class="form-control" required="required">
+                              <option value="">Selecione</option>
+                              <option value="administracao">Administração</option>
+                              <option value="analisesclinicas">Análises Clínicas</option>
+                              <option value="enfermagem">Enfermagem</option>
+                              <option value="informatica">Informática</option>
+                              <option value="meioambiente">Meio Ambiente</option>
+                              <option value="quimica">Quimica</option>
+                           </select>
+                        </div>
                      </div>
 
-                     <div class="form-group col-md-6">
-                        <label>Tipo de Usuário</label>
-                        <select name="" id="tipousuario" class="form-control">
-                           <option value="">Selecione</option>
-                           <option value="1">Leitor</option>
-                           <option value="2">Secretaria</option>
-                           <option value="3">Administração</option>
-                        </select>
-                     </div>
+                     <button type="submit" class="btn btn-primary btn-block" src="">Cadastrar</button>
 
-                     <div class="form-group col-md-6">
-                        <label for="matricula">Matricula</label>
-                        <input class="form-control" type="text" name="Matricula" id="matricula"
-                           placeholder="N° Matricula">
-                     </div>
-
-                     <div class="form-group col-md-2">
-                        <label for="senha">Senha</label>
-                        <input class="form-control" type="text" maxlength="8" id="senha" placeholder="Senha">
-                     </div>
-
-                     <div class="form-group col-md-2">
-                        <label>Série</label>
-                        <select id="serie" class="form-control" required="required">
-                           <option value="">Selecione</option>
-                           <option value="1">1º Ano</option>
-                           <option value="2">2º Ano</option>
-                           <option value="3">3º Ano</option>
-                           <option value="4">4º Ano</option>
-                        </select>
-                     </div>
-
-                     <div class="form-group col-md-2">
-                        <label>Curso</label>
-                        <select id="curso" class="form-control" required="required">
-                           <option value="">Selecione</option>
-                           <option value="administracao">Administração</option>
-                           <option value="analisesclinicas">Análises Clínicas</option>
-                           <option value="enfermagem">Enfermagem</option>
-                           <option value="informatica">Informática</option>
-                           <option value="meioambiente">Meio Ambiente</option>
-                           <option value="quimica">Quimica</option>
-                        </select>
-                     </div>
-                  </div>
-
-                  <button type="submit" class="btn btn-primary btn-block" src="">Cadastrar</button>
-        
-               </form>
-            </div>
+                  </form>
+               </div>
             </div>
          </section>
       </div>
@@ -275,10 +276,10 @@
                      <form action="" enctype="multipart/form-data">
                         <legend class="text-center">Publicar Livro</legend>
 
-                           <div class="form-group">
-                              <label for="">Capa Do livro</label>
-                              <input type="file" id="img" class="form-control">
-                            </div>
+                        <div class="form-group">
+                           <label for="">Capa Do livro</label>
+                           <input type="file" id="img" class="form-control">
+                        </div>
 
                         <div class="form-group">
                            <label for="titulo">Título</label>
@@ -339,5 +340,6 @@
 
 
 
- </body>
+</body>
+
 </html>
