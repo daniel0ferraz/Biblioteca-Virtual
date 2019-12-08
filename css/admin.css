@@ -1,7 +1,7 @@
 ﻿/**-------------AUTOR----------------
 @Daniel Ferraz / 4° Informática
 EMAIL -  Daniel0ferraz@outlook.com
-Whatsapp - 73 99990-0012
+Whatsapp - 73 9997-8323
 Projeto - Biblioteca Online
 Ùltima Atulização em: 10/10/2019 ás 15:50
 -----------------------------------------*/
@@ -63,7 +63,6 @@ ul {
     font-size: 24px;
     padding-top: 5px;
     padding-bottom: 5px;
-
 }
 
 .icone {
@@ -74,13 +73,7 @@ ul {
 }
 
 .box-titulo {
-    padding: 10px 24px;
-    padding-bottom: 0.75rem;
-    position: relative;
-}
-
-.box span {
-    font-size: 16px;
+    padding: 10px;
 }
 
 #numeros {
